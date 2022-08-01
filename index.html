@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Omer Rafaeli</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet'
+    type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="css/ca-gallery.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top" onload="onInit()">
+  <div class="offcanvas-btn" onClick="openCanvas()">
+    <i class="fa fa-comment" aria-hidden="true"></i>
+  </div>
+  <aside class="offcanvas-aside">
+
+    <!-- Contact -->
+    <form id="fcf-form-id" class="fcf-form-class" method="post" action=”mailto:contact@yourdomain.com”>
+      <div class="fcf-form-group">
+        <label for="Name" class="fcf-label">Your name</label>
+        <div class="fcf-input-group">
+          <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+        </div>
+      </div>
+      <div class="fcf-form-group">
+        <label for="Email" class="fcf-label">Your email address</label>
+        <div class="fcf-input-group">
+          <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+        </div>
+      </div>
+      <div class="fcf-form-group">
+        <label for="Message" class="fcf-label">Your message</label>
+        <div class="fcf-input-group">
+          <textarea id="Message" name="Message" class="fcf-form-control" rows="10" maxlength="3000" required></textarea>
+        </div>
+      </div>
+      <div class="fcf-form-group">
+        <button type="button" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block" onclick="onSubmit(event)">Submit</button>
+      </div>
+      <div class="fcf-credit" id="fcf-credit">
+      </div>
+    </form>
+  </aside>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#me">Meet Me</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <i class="fa fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#services">Specialities</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#me">Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact" onClick="openCanvas()">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="masthead">
+    <div class="container">
+      <div class="intro-text">
+        <div class="intro-lead-in">Welcome To my Portfolio</div>
+        <div class="intro-heading">It's Nice To Meet You</div>
+        <a class="btn btn-xl js-scroll-trigger" href="#services">Tell Me More</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Services -->
+  <section id="services">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading">Specialities</h2>
+          <h3 class="section-subheading text-muted">Let Me Tell You What I Can Do For You.</h3>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-md-4">
+          <span class="fa-stack fa-4x">
+            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+            <i class="fa fa-connectdevelop fa-stack-1x fa-inverse"></i>
+          </span>
+          <h4 class="service-heading">Fullstack Development</h4>
+          <p class="text-muted">Top industry skills all in the same place,
+            Client & server side with sleek design and compelling user experience.</p>
+        </div>
+        <div class="col-md-4">
+          <span class="fa-stack fa-4x">
+            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+            <i class="fa fa-mobile-phone fa-stack-1x fa-inverse"></i>
+          </span>
+          <h4 class="service-heading">Responsive Design</h4>
+          <p class="text-muted">My applications and website are design for you and
+            fit every desktop, tablet or mobile to suit your need.</p>
+        </div>
+        <div class="col-md-4">
+          <span class="fa-stack fa-4x">
+            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+            <i class="fa fa-paint-brush fa-stack-1x fa-inverse"></i>
+          </span>
+          <h4 class="service-heading">3D Art & Creative</h4>
+          <p class="text-muted">Experienced with industry's leading 3D and graphics software including:
+            Blender, Maya, Substance painter, photoshop, premiere and more.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Grid -->
+  <section class="bg-light" id="portfolio">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading">Portfolio</h2>
+          <h3 class="section-subheading text-muted">Now.. Let Me Show You.</h3>
+        </div>
+      </div>
+      <div class="row projects">
+        <!-- render projects here -->
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Me -->
+  <section class="bg-light" id="me" style="padding: 0px;">
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="team-member">
+          <img class="mx-auto rounded-circle" src="img/team/4.jpg" alt="">
+          <h4>Omer Rafaeli</h4>
+          <p class="text-muted">Fullstack Developer<br>3D Tech Artist</p>
+          <ul class="list-inline social-buttons">
+            <li class="list-inline-item">
+              <a href="https://www.instagram.com/rafaeli3d/">
+                <i class="fa fa-instagram"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.facebook.com/omer.rafaeli.543">
+                <i class="fa fa-facebook"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.linkedin.com/in/rafaeliomer/">
+                <i class="fa fa-linkedin"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-8 flex-align-center">
+        <p class="large text-muted  about-description">
+          Re-entering the industry as a fullstack developer while holding previous
+          experience in development and creative departments as a Technical Artist
+          with a demonstrated history from within the Gaming industry.
+          Skilled in Unity, Blender, Maya, Adobe Photoshop, Substance Painter.
+          Strong arts and design professional with an associate degree of animation and 3D graphics focused in
+          Animation, Interactive Technology, Video Graphics and Special Effects from Santa Monica College.
+          Looking to conquer new horizons as a fullstack developer for games 
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 flex-align-center">
+          <a href="http://coding-academy.org" target="_blank">
+            <img src="./img/ca-logo.png" alt="">
+          </a>
+        </div>        
+        <div class="col-md-4 flex-align-center">
+          <ul class="list-inline quicklinks">
+            <li class="list-inline-item">
+              <h6>Check Out My Work At Artstation</h6>
+              <a href="https://www.artstation.com/rafaeli3d" title="My Artstation Page">Click Me</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Portfolio Modals -->
+  <div class="portfolio-modal modal fade" id="portfolioModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/popper/popper.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/ca-gallery.js"></script>
+  <script src="js/offCanvas.js"></script>
+  <script src="js/service.js"></script>
+  <script src="js/controller.js"></script>
+
+
+</body>
+
+</html>
