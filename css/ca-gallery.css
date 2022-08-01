@@ -84,7 +84,7 @@ body {
 .offcanvas-aside {
     position: fixed;
     height: 100%;
-    background-image: url('/img/contactImg.jpg');
+    background-image: url('img/contactImg.jpg');
     background-size: cover;
     width: 80vw;
     right: -80vw;
