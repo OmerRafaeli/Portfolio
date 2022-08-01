@@ -70,11 +70,11 @@ const projects = [
         id: 6,
         name: "3D animations",
         imgRef: "6",
-        media: `"<video width="480" height="640" autoplay><source src="../img/portfolio/06-full.mp4" type="video/mp4"><source src="movie.ogg" type="video/ogg">Your browser does not support the video tag.</video>`,
+        media: `"<video width="480" height="640" autoplay><source src="img/portfolio/06-full.mp4" type="video/mp4"><source src="movie.ogg" type="video/ogg">Your browser does not support the video tag.</video>`,
         title: "stylized Modeling",
         desc: "lorem ipsum lorem ipsum lorem ipsum",
-        url: "https://omerrafaeli.github.io/The-Book-Shop/",
-        linkText: "Book Store Example Here",
+        url: "https://www.artstation.com/rafaeli3d/albums/all",
+        linkText: "Other 3D Work",
         publishedAt: 1448693942300,
         labels: ["Matrixes", "keyboard events"]
     }
